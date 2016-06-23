@@ -13,12 +13,11 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,500italic,700italic,300,300italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- SYNTAX HIGHLIGHTING -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
-
     <!-- CUSTOM STYLESHEETS -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- CODEMIRROR -->
+    <link rel="stylesheet" href="css/codemirror/codemirror.css">
+    <link rel="stylesheet" href="css/codemirror/material.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>

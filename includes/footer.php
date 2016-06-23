@@ -1,4 +1,11 @@
     <!-- SCRIPTS -->
-    <script src="js/script.js"></script>
+      <!-- CODEMIRROR -->
+    <script src="js/codemirror/codemirror.js"></script>
+      <script src="js/codemirror/modes/htmlmixed/htmlmixed.js"></script>
+      <script src="js/codemirror/modes/javascript/javascript.js"></script>
+      <script src="js/codemirror/modes/php/php.js"></script>
+      <script src="js/codemirror/modes/xml/xml.js"></script>
+      <script src="js/codemirror/modes/css/css.js"></script>
+    <script src="js/codemirror/buildeditor.js"></script>
   </body>
 </html>
