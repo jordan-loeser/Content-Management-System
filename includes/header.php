@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- CODEMIRROR -->
     <link rel="stylesheet" href="css/codemirror/codemirror.css">
-    <link rel="stylesheet" href="css/codemirror/material.css">
+    <link rel="stylesheet" href="css/codemirror/themes/material.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
