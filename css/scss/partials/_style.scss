@@ -1,0 +1,88 @@
+/* # Style
+---------------------------------------------------------------------------------------------------- */
+
+header {
+  overflow: auto;
+  .logo {
+    padding: 2em;
+    border-bottom: 1px solid #1e272c;
+    float: left;
+    width: 250px;
+    background-color: #232e34;
+    h1 {
+      font-family: $header-font;
+      font-size: 25px;
+      margin: 0;
+    }
+  }
+  .page-info {
+    padding: 2em;
+    float: right;
+    width: calc(100% - 250px);
+    h2 {
+      font-weight: 100;
+      font-family: $header-font;
+      margin: 0;
+    }
+    h3 {
+      font-weight: 100;
+      margin: 0;
+      margin-top: .5em;
+      font-size: 1em;
+      color: #4a5961;
+      background: aquamarine;
+    }
+  }
+}
+
+.sidebar {
+  float: left;
+  height: 100%;
+  height: 100vh;
+  width: 250px;
+  background-color: #232e34;
+  overflow-y: scroll;
+  ul {
+    //padding-top: 1em;
+    font-family: $header-font;
+    li {
+      span {
+        padding: 1em 2em;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1em;
+        border-bottom: 1px solid #1e272c;
+        font-weight: 100;
+        color: #D1DBE0;
+        display: block;
+        &:hover {
+          background-color: lighten(#232e34, 5%);;
+        }
+      }
+      &.open {
+        background-color: #1E272C;
+      }
+      .sub-menu {
+        background-color: #253137;
+        list-style-type: none;
+        padding: 0;
+        li {
+          span {
+            text-transform: none;
+            border-color: #232e34;
+            padding: .8em 2.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-panel.with-sidebar {
+  width: calc(100% - 250px);
+  float: right;
+  .CodeMirror {
+    height: 100%;
+    height: 100vh;
+  }
+}

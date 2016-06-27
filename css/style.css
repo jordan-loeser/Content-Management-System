@@ -1,3 +1,95 @@
-textarea#codeEditor {
-  display: none;
-}
+/*
+Project Name: Jordan Loeser's Portfolio
+Author: Jordan Loeser
+Author URI: http://jordanloeser.com/
+Version:      1.0.0
+*/
+/* # Reset
+---------------------------------------------------------------------------------------------------- */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  color: #FFF;
+  background: #1E272C;
+  font-family: "Open Sans", sans-serif;
+  height: 100%; }
+
+/* # Style
+---------------------------------------------------------------------------------------------------- */
+header {
+  overflow: auto; }
+  header .logo {
+    padding: 2em;
+    border-bottom: 1px solid #1e272c;
+    float: left;
+    width: 250px;
+    background-color: #232e34; }
+    header .logo h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 25px;
+      margin: 0; }
+  header .page-info {
+    padding: 2em;
+    float: right;
+    width: calc(100% - 250px); }
+    header .page-info h2 {
+      font-weight: 100;
+      font-family: "Roboto", sans-serif;
+      margin: 0; }
+    header .page-info h3 {
+      font-weight: 100;
+      margin: 0;
+      margin-top: .5em;
+      font-size: 1em;
+      color: #4a5961;
+      background: aquamarine; }
+
+.sidebar {
+  float: left;
+  height: 100%;
+  height: 100vh;
+  width: 250px;
+  background-color: #232e34;
+  overflow-y: scroll; }
+  .sidebar ul {
+    font-family: "Roboto", sans-serif; }
+    .sidebar ul li span {
+      padding: 1em 2em;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1em;
+      border-bottom: 1px solid #1e272c;
+      font-weight: 100;
+      color: #D1DBE0;
+      display: block; }
+      .sidebar ul li span:hover {
+        background-color: #2d3b43; }
+    .sidebar ul li.open {
+      background-color: #1E272C; }
+    .sidebar ul li .sub-menu {
+      background-color: #253137;
+      list-style-type: none;
+      padding: 0; }
+      .sidebar ul li .sub-menu li span {
+        text-transform: none;
+        border-color: #232e34;
+        padding: .8em 2.5em; }
+
+.main-panel.with-sidebar {
+  width: calc(100% - 250px);
+  float: right; }
+  .main-panel.with-sidebar .CodeMirror {
+    height: 100%;
+    height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */

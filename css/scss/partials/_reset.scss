@@ -15,8 +15,10 @@ ol {
   padding: 0;
 }
 
-body {
+html, body {
   color: $main-font-color;
   background: $background-color;
   font-family: $main-font;
+  height: 100%;
+  //font-size: 10px;
 }

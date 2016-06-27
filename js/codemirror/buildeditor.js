@@ -3,5 +3,5 @@ var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("codeEditor")
     matchClosing: true,
     mode: "htmlmixed",
     styleActiveLine: true,
-    theme: "material"
+    theme: "devcms"
 });

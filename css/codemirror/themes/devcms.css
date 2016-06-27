@@ -1,0 +1,55 @@
+/*
+
+    Name:       devcms
+    Author:     Jordan Loeser (http://github.com/jordan_loeser)
+
+*/
+
+.cm-s-devcms {
+  background-color: #1E272C;
+  color: rgba(233, 237, 237, 1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-size: .75em;
+  font-weight: 100;
+}
+.cm-s-devcms .CodeMirror-gutters {
+  background: #1E272C;
+  color: rgba(209,219,224,.7);
+  border-right: 1px solid #232E34;
+}
+.cm-s-devcms .CodeMirror-guttermarker, .cm-s-devcms .CodeMirror-guttermarker-subtle, .cm-s-devcms .CodeMirror-linenumber { color: rgba(209,219,224,.7); }
+.cm-s-devcms .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+.cm-s-devcms div.CodeMirror-selected { background: rgba(255, 255, 255, 0.15); }
+.cm-s-devcms.CodeMirror-focused div.CodeMirror-selected { background: rgba(255, 255, 255, 0.10); }
+.cm-s-devcms .CodeMirror-line::selection, .cm-s-devcms .CodeMirror-line > span::selection, .cm-s-devcms .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, 0.10); }
+.cm-s-devcms .CodeMirror-line::-moz-selection, .cm-s-devcms .CodeMirror-line > span::-moz-selection, .cm-s-devcms .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
+
+.cm-s-devcms .CodeMirror-activeline-background { background: #232e34; /*background: rgba(0, 0, 0, 0);*/ }
+.cm-s-devcms .cm-keyword { color: rgba(199, 146, 234, 1); }
+.cm-s-devcms .cm-operator { color: rgba(233, 237, 237, 1); }
+.cm-s-devcms .cm-variable-2 { color: #80CBC4; }
+.cm-s-devcms .cm-variable-3 { color: #82B1FF; }
+.cm-s-devcms .cm-builtin { color: #DECB6B; }
+.cm-s-devcms .cm-atom { color: #F77669; }
+.cm-s-devcms .cm-number { color: #F77669; }
+.cm-s-devcms .cm-def { color: rgba(233, 237, 237, 1); }
+.cm-s-devcms .cm-string { color: #C3E88D; }
+.cm-s-devcms .cm-string-2 { color: #80CBC4; }
+.cm-s-devcms .cm-comment { color: #546E7A; }
+.cm-s-devcms .cm-variable { color: #82B1FF; }
+.cm-s-devcms .cm-tag { color: #80CBC4; }
+.cm-s-devcms .cm-meta { color: #80CBC4; }
+.cm-s-devcms .cm-attribute { color: #FFCB6B; }
+.cm-s-devcms .cm-property { color: #80CBAE; }
+.cm-s-devcms .cm-qualifier { color: #DECB6B; }
+.cm-s-devcms .cm-variable-3 { color: #DECB6B; }
+.cm-s-devcms .cm-tag { color: rgba(255, 83, 112, 1); }
+.cm-s-devcms .cm-error {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: #EC5F67;
+}
+.cm-s-devcms .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}

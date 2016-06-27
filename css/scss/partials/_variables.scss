@@ -3,14 +3,14 @@
 //---------------------------------------------------------------------------------------------------- */
 
 // THEME COLORS
-$main-color: ;
+$main-color: blue;
 $dark-color: darken($main-color, 50%);
-$background-color: $main-color;
+$background-color: #1E272C;
 
 // THEME FONTS
-$main-font: "",sans-serif;
-$header-font: "",sans-serif;
-$main-font-color: $main-color;
+$main-font: "Open Sans",sans-serif;
+$header-font: "Roboto",sans-serif;
+$main-font-color: #FFF;
 
 // HEADERS
 $header-color: $main-color;
