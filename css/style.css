@@ -19,7 +19,7 @@ ol {
   padding: 0; }
 
 html, body {
-  color: #FFF;
+  color: #D1DBE0;
   background: #1E272C;
   font-family: "Open Sans", sans-serif;
   height: 100%; }
@@ -29,67 +29,79 @@ html, body {
 header {
   overflow: auto; }
   header .logo {
-    padding: 2em;
-    border-bottom: 1px solid #1e272c;
     float: left;
+    height: 150px;
     width: 250px;
-    background-color: #232e34; }
-    header .logo h1 {
-      font-family: "Roboto", sans-serif;
-      font-size: 25px;
-      margin: 0; }
-  header .page-info {
     padding: 2em;
-    float: right;
-    width: calc(100% - 250px); }
-    header .page-info h2 {
-      font-weight: 100;
-      font-family: "Roboto", sans-serif;
-      margin: 0; }
-    header .page-info h3 {
-      font-weight: 100;
+    background-color: #232E34;
+    border-bottom: 1px solid #1E272C; }
+    header .logo h1 {
       margin: 0;
-      margin-top: .5em;
-      font-size: 1em;
-      color: #4a5961;
-      background: aquamarine; }
+      font-family: "Roboto", sans-serif;
+      color: #00BCD4;
+      font-size: 20px;
+      font-size: 2em;
+      font-weight: 100; }
+  header .page-info {
+    float: right;
+    height: 150px;
+    width: calc(100% - 250px);
+    padding: 2em; }
+    header .page-info h2 {
+      margin: 0;
+      margin-top: 1em;
+      font-family: "Roboto", sans-serif;
+      font-weight: 100; }
+    header .page-info .url {
+      float: left;
+      margin: 0;
+      margin-top: .8em;
+      padding: .5em 10px;
+      font-family: "Roboto Mono", sans-serif;
+      color: rgba(209, 219, 224, 0.5);
+      font-size: .8em;
+      font-weight: 100;
+      background: #232E34;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      background-clip: padding-box; }
 
 .sidebar {
   float: left;
-  height: 100%;
-  height: 100vh;
+  height: calc(100% - 150px);
+  height: calc(100vh - 150px);
   width: 250px;
-  background-color: #232e34;
+  background-color: #232E34;
   overflow-y: scroll; }
   .sidebar ul {
     font-family: "Roboto", sans-serif; }
     .sidebar ul li span {
+      display: block;
       padding: 1em 2em;
+      color: #D1DBE0;
       text-transform: uppercase;
       font-size: 14px;
       line-height: 1em;
-      border-bottom: 1px solid #1e272c;
       font-weight: 100;
-      color: #D1DBE0;
-      display: block; }
+      border-bottom: 1px solid #1E272C; }
       .sidebar ul li span:hover {
-        background-color: #2d3b43; }
-    .sidebar ul li.open {
+        background-color: #2D3B43; }
+    .sidebar ul li.open > span {
       background-color: #1E272C; }
     .sidebar ul li .sub-menu {
-      background-color: #253137;
+      padding: 0;
       list-style-type: none;
-      padding: 0; }
+      border-bottom: 1px solid #1E272C; }
       .sidebar ul li .sub-menu li span {
+        padding: 1em 3em;
         text-transform: none;
-        border-color: #232e34;
-        padding: .8em 2.5em; }
+        border: none; }
 
 .main-panel.with-sidebar {
-  width: calc(100% - 250px);
-  float: right; }
+  float: right;
+  width: calc(100% - 250px); }
   .main-panel.with-sidebar .CodeMirror {
-    height: 100%;
-    height: 100vh; }
+    height: calc(100% - 150px);
+    height: calc(100vh - 150px); }
 
 /*# sourceMappingURL=style.css.map */

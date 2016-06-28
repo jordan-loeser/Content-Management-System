@@ -3,17 +3,21 @@
 //---------------------------------------------------------------------------------------------------- */
 
 // THEME COLORS
-$main-color: blue;
-$dark-color: darken($main-color, 50%);
-$background-color: #1E272C;
+$gray: #232E34;
+$gray-light: #2D3B43;
+$gray-dark: #1E272C;
+$light-color: #D1DBE0;
+$accent-color: #00BCD4;
+$background-color: $gray-dark;
 
 // THEME FONTS
 $main-font: "Open Sans",sans-serif;
 $header-font: "Roboto",sans-serif;
-$main-font-color: #FFF;
+$mono-font: "Roboto Mono",sans-serif;
+$main-font-color: $light-color;
 
 // HEADERS
-$header-color: $main-color;
+$header-color: $light-color;
 
 //----------------------------------------------------------//
 //    BREAKPOINTS                                           //

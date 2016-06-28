@@ -38,13 +38,13 @@
 .cm-s-devcms .cm-string-2 { color: #80CBC4; }
 .cm-s-devcms .cm-comment { color: #546E7A; }
 .cm-s-devcms .cm-variable { color: #82B1FF; }
-.cm-s-devcms .cm-tag { color: #80CBC4; }
+.cm-s-devcms .cm-tag { color: #0898ac; }
 .cm-s-devcms .cm-meta { color: #80CBC4; }
 .cm-s-devcms .cm-attribute { color: #FFCB6B; }
 .cm-s-devcms .cm-property { color: #80CBAE; }
 .cm-s-devcms .cm-qualifier { color: #DECB6B; }
 .cm-s-devcms .cm-variable-3 { color: #DECB6B; }
-.cm-s-devcms .cm-tag { color: rgba(255, 83, 112, 1); }
+.cm-s-devcms .cm-tag { color: rgba(8,152,172,1); }
 .cm-s-devcms .cm-error {
   color: rgba(255, 255, 255, 1.0);
   background-color: #EC5F67;

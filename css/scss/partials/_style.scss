@@ -4,74 +4,81 @@
 header {
   overflow: auto;
   .logo {
-    padding: 2em;
-    border-bottom: 1px solid #1e272c;
     float: left;
+    height: 150px;
     width: 250px;
-    background-color: #232e34;
+    padding: 2em;
+    background-color: $gray;
+    border-bottom: 1px solid $gray-dark;
     h1 {
-      font-family: $header-font;
-      font-size: 25px;
       margin: 0;
+      font-family: $header-font;
+      color: $accent-color;
+      font-size: 20px;
+      font-size: 2em;
+      font-weight: 100;
     }
   }
   .page-info {
-    padding: 2em;
     float: right;
+    height: 150px;
     width: calc(100% - 250px);
+    padding: 2em;
     h2 {
-      font-weight: 100;
+      margin: 0;
+      margin-top: 1em;
       font-family: $header-font;
-      margin: 0;
-    }
-    h3 {
       font-weight: 100;
+    }
+    .url {
+      float: left;
       margin: 0;
-      margin-top: .5em;
-      font-size: 1em;
-      color: #4a5961;
-      background: aquamarine;
+      margin-top: .8em;
+      padding: .5em 10px;
+      font-family: $mono-font;
+      color: transparentize($light-color, .5); //#4a5961;
+      font-size: .8em;
+      font-weight: 100;
+      background: $gray;
+      @include border-radius(3px);
     }
   }
 }
 
 .sidebar {
   float: left;
-  height: 100%;
-  height: 100vh;
+  height: calc(100% - 150px);
+  height: calc(100vh - 150px);
   width: 250px;
-  background-color: #232e34;
+  background-color: $gray;
   overflow-y: scroll;
   ul {
-    //padding-top: 1em;
     font-family: $header-font;
     li {
       span {
+        display: block;
         padding: 1em 2em;
+        color: $light-color;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 1em;
-        border-bottom: 1px solid #1e272c;
         font-weight: 100;
-        color: #D1DBE0;
-        display: block;
+        border-bottom: 1px solid $gray-dark;
         &:hover {
-          background-color: lighten(#232e34, 5%);;
+          background-color: $gray-light;
         }
       }
-      &.open {
-        background-color: #1E272C;
+      &.open > span {
+          background-color: $gray-dark;
       }
       .sub-menu {
-        background-color: #253137;
-        list-style-type: none;
         padding: 0;
-        li {
-          span {
+        list-style-type: none;
+        border-bottom: 1px solid $gray-dark;
+        li span {
+            padding: 1em 3em;
             text-transform: none;
-            border-color: #232e34;
-            padding: .8em 2.5em;
-          }
+            border: none;
         }
       }
     }
@@ -79,10 +86,10 @@ header {
 }
 
 .main-panel.with-sidebar {
-  width: calc(100% - 250px);
   float: right;
+  width: calc(100% - 250px);
   .CodeMirror {
-    height: 100%;
-    height: 100vh;
+    height: calc(100% - 150px);
+    height: calc(100vh - 150px);
   }
 }

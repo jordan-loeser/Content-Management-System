@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/777cea0367.js"></script>
 
     <!-- CUSTOM STYLESHEETS -->
     <link rel="stylesheet" href="css/normalize.css">
