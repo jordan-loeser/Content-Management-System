@@ -12,8 +12,13 @@
 <div class="sidebar">
   <ul>
     <li><span>Pages</span></li>
-    <li><span>CSS</span></li>
-    <li class="open"><span>Templates</span>
+    <li class="has-children"><span>CSS</span>
+      <ul class="sub-menu">
+        <li><span>Homepage</span></li>
+        <li><span>Blog</span></li>
+      </ul>
+    </li>
+    <li class="has-children"><span>Templates</span>
       <ul class="sub-menu">
         <li><span>Homepage</span></li>
         <li><span>Blog</span></li>

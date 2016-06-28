@@ -57,7 +57,9 @@ header {
     li {
       span {
         display: block;
+        position: relative;
         padding: 1em 2em;
+        padding-left: 3.5em;
         color: $light-color;
         text-transform: uppercase;
         font-size: 14px;
@@ -67,23 +69,56 @@ header {
         &:hover {
           background-color: $gray-light;
         }
+        &.open {
+          & > span {
+            background-color: $gray-dark;
+            &:before {
+              content: "\f0d7";
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: normal;
+              text-decoration: inherit;
+              font-size: 1em;
+              padding-right: 0.5em;
+              position: absolute;
+              top: 17px;
+              left: 2em;
+            }
+          }
+        }
       }
-      &.open > span {
-          background-color: $gray-dark;
+      &.has-children span {
+        &:before {
+          content: "\f0da";
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+          font-size: 1em;
+          padding-right: 0.5em;
+          position: absolute;
+          top: 17px;
+          left: 2em;
+        }
       }
       .sub-menu {
+        display: none;
         padding: 0;
         list-style-type: none;
         border-bottom: 1px solid $gray-dark;
         li span {
-            padding: 1em 3em;
-            text-transform: none;
-            border: none;
+          padding: 1em 3.5em;
+          text-transform: none;
+          border: none;
+          &:before {
+            content: "";
+          }
         }
       }
     }
   }
 }
+
 
 .main-panel.with-sidebar {
   float: right;
