@@ -65,6 +65,10 @@ header {
       border-radius: 3px;
       -webkit-border-radius: 3px;
       background-clip: padding-box; }
+      header .page-info .url:focus {
+        background: #D1DBE0;
+        color: #232E34;
+        outline: none; }
 
 .sidebar {
   float: left;
@@ -88,19 +92,10 @@ header {
       border-bottom: 1px solid #1E272C; }
       .sidebar ul li span:hover {
         background-color: #2D3B43; }
-      .sidebar ul li span.open > span {
-        background-color: #1E272C; }
-        .sidebar ul li span.open > span:before {
-          content: "\f0d7";
-          font-family: FontAwesome;
-          font-style: normal;
-          font-weight: normal;
-          text-decoration: inherit;
-          font-size: 1em;
-          padding-right: 0.5em;
-          position: absolute;
-          top: 17px;
-          left: 2em; }
+    .sidebar ul li.open > span {
+      background-color: #1E272C; }
+      .sidebar ul li.open > span:before {
+        content: "\f0d7" !important; }
     .sidebar ul li.has-children span:before {
       content: "\f0da";
       font-family: FontAwesome;

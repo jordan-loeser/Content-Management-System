@@ -41,6 +41,11 @@ header {
       font-weight: 100;
       background: $gray;
       @include border-radius(3px);
+      &:focus {
+        background: $light-color;
+        color: $gray;
+        outline: none;
+      }
     }
   }
 }
@@ -69,21 +74,12 @@ header {
         &:hover {
           background-color: $gray-light;
         }
-        &.open {
-          & > span {
-            background-color: $gray-dark;
-            &:before {
-              content: "\f0d7";
-              font-family: FontAwesome;
-              font-style: normal;
-              font-weight: normal;
-              text-decoration: inherit;
-              font-size: 1em;
-              padding-right: 0.5em;
-              position: absolute;
-              top: 17px;
-              left: 2em;
-            }
+      }
+      &.open {
+        & > span {
+          background-color: $gray-dark;
+          &:before {
+            content: "\f0d7" !important;
           }
         }
       }

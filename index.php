@@ -6,7 +6,7 @@
   </div>
   <div class="page-info">
     <h2>Homepage Template</h2>
-    <div class="url" contenteditable="true">example.com/team/john-doe</div>
+    <div class="url" contenteditable="true">http://example.com/team/john-doe</div>
   </div>
 </header><!--/DASHBOARD HEADER -->
 <div class="sidebar">
