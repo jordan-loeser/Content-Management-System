@@ -8,8 +8,8 @@ $medium: #F3F5F6; //#1C1C1F; //#232E34;
 $light: #FFF; //#2D3B43;
 $dark: #7F94A1; //#121314; //#1E272C;
 $fog: transparentize($dark, .5);
-$neutral: #DFE0E6; //#D1DBE0;
-$background-color: $dark;
+$neutral: $medium;//#DFE0E6; //#D1DBE0;
+$background-color: $neutral;
 
 // THEME FONTS
 $main-font: "Open Sans",sans-serif;

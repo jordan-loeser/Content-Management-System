@@ -19,24 +19,28 @@ ol {
 
 html, body {
   color: #7F94A1;
-  background: #7F94A1;
+  background: #F3F5F6;
   font-family: "Open Sans", sans-serif;
   height: 100%; }
 
 /* # Helper Classes
 ---------------------------------------------------------------------------------------------------- */
-a.button {
-  display: inline-block;
-  padding: .5em 1em;
-  font-size: .8em;
-  text-decoration: none;
-  color: #DFE0E6;
-  background: #00BCD4;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  background-clip: padding-box; }
-  a.button:hover {
-    background: #008fa1; }
+a {
+  color: #00BCD4; }
+  a:hover {
+    color: #008fa1; }
+  a.button {
+    display: inline-block;
+    padding: .5em 1em;
+    font-size: .8em;
+    text-decoration: none;
+    color: #F3F5F6;
+    background: #00BCD4;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-clip: padding-box; }
+    a.button:hover {
+      background: #008fa1; }
 
 /* # CodeEditor
 ---------------------------------------------------------------------------------------------------- */
@@ -56,69 +60,48 @@ a.button {
   .cm-s-devcms .CodeMirror-cursor {
     border-left-color: #7F94A1; }
 
-/* # Header
+/* # Section Nav
 ---------------------------------------------------------------------------------------------------- */
-header {
-  overflow: auto; }
-  header .logo {
-    float: left;
-    height: 150px;
-    width: 250px;
-    padding: 2em;
-    background-color: #F3F5F6;
-    border-bottom: 1px solid rgba(127, 148, 161, 0.5); }
-    header .logo h1 {
-      margin: 0;
-      font-family: "Roboto", sans-serif;
-      color: #00BCD4;
-      font-size: 20px;
-      font-size: 2em;
-      font-weight: 100; }
-  header .page-info {
-    float: right;
-    height: 150px;
-    width: calc(100% - 250px);
-    padding: 2em;
-    background-color: #FFF;
-    border-bottom: 1px solid #F3F5F6; }
-    header .page-info h2 {
-      margin: 0;
-      margin-top: 1em;
-      font-family: "Roboto", sans-serif;
-      font-weight: 100; }
-    header .page-info .url {
-      float: left;
-      margin: 0;
-      margin-top: .8em;
-      padding: .5em 10px;
-      font-family: "Roboto Mono", sans-serif;
-      color: rgba(127, 148, 161, 0.5);
-      font-size: .8em;
-      font-weight: 100;
-      background: #F3F5F6;
-      border-radius: 3px;
-      -webkit-border-radius: 3px;
-      background-clip: padding-box; }
-      header .page-info .url:focus {
-        background: rgba(127, 148, 161, 0.5);
-        color: #FFF;
-        outline: none; }
-    header .page-info .button {
-      float: right; }
+#section-nav {
+  width: 100px;
+  float: left;
+  text-align: center; }
+  #section-nav ul {
+    padding-top: 3em; }
+    #section-nav ul a {
+      font-size: 24px;
+      font-size: 1.5em;
+      color: #7F94A1;
+      text-decoration: none; }
+      #section-nav ul a li {
+        padding: 1em;
+        padding-top: 0;
+        padding-bottom: 2em; }
+        #section-nav ul a li div.label {
+          display: none;
+          padding-top: 1em;
+          font-size: 12px;
+          font-size: .5em;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          color: #00BCD4; }
+      #section-nav ul a:hover {
+        color: #647b89; }
 
 /* # Sidebar
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
+  display: none;
   float: left;
   height: calc(100% - 150px);
   height: calc(100vh - 150px);
-  width: 250px;
+  width: 100px;
   background-color: #F3F5F6;
   overflow-y: scroll; }
   .sidebar ul {
     font-family: "Roboto", sans-serif; }
     .sidebar ul li span {
-      display: block;
+      display: none;
       position: relative;
       padding: 1em 2em;
       padding-left: 3.5em;
@@ -157,12 +140,65 @@ header {
         .sidebar ul li .sub-menu li span:before {
           content: ""; }
 
-/* # Main Panel
----------------------------------------------------------------------------------------------------- */
-.main-panel.with-sidebar {
+.right {
   float: right;
-  width: calc(100% - 250px); }
-  .main-panel.with-sidebar .CodeMirror {
+  width: calc(100% - 100px);
+  box-shadow: 0px 0px 20px rgba(127, 148, 161, 0.5);
+  /* # Header
+  ---------------------------------------------------------------------------------------------------- */
+  /* # Main Panel
+  ---------------------------------------------------------------------------------------------------- */ }
+  .right header {
+    overflow: auto; }
+    .right header .logo {
+      display: none;
+      float: left;
+      height: 150px;
+      width: 100px;
+      padding: 2em;
+      background-color: #F3F5F6;
+      border-bottom: 1px solid rgba(127, 148, 161, 0.5); }
+      .right header .logo h1 {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        color: #00BCD4;
+        font-size: 20px;
+        font-size: 2em;
+        font-weight: 100; }
+    .right header .page-info {
+      height: 150px;
+      padding: 2em;
+      background-color: #FFF;
+      border-bottom: 1px solid #F3F5F6; }
+      .right header .page-info h2 {
+        margin: 0;
+        margin-top: 1em;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100; }
+      .right header .page-info .url {
+        float: left;
+        margin: 0;
+        margin-top: .8em;
+        padding: .5em 10px;
+        font-family: "Roboto Mono", sans-serif;
+        color: rgba(127, 148, 161, 0.5);
+        font-size: .8em;
+        font-weight: 100;
+        background: #F3F5F6;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background-clip: padding-box; }
+        .right header .page-info .url:hover {
+          background: #e4e9eb;
+          cursor: default; }
+        .right header .page-info .url:focus {
+          background: rgba(127, 148, 161, 0.5);
+          color: #FFF;
+          outline: none;
+          cursor: text; }
+      .right header .page-info .button {
+        float: right; }
+  .right .main-panel.with-sidebar .CodeMirror {
     height: calc(100% - 150px);
     height: calc(100vh - 150px); }
 
