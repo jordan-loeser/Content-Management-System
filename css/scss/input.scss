@@ -1,7 +1,6 @@
 /*
-Project Name: Jordan Loeser's Portfolio
-Author: Jordan Loeser
-Author URI: http://jordanloeser.com/
+Project Name: CMS
+Author: Jordan Loeser & Trevor Crupi
 Version:      1.0.0
 */
 
@@ -9,4 +8,6 @@ Version:      1.0.0
 @import 'partials/variables';
 @import 'partials/reset';
 @import 'partials/mixins';
+@import 'partials/helper';
+@import 'partials/codeEditor';
 @import 'partials/style';

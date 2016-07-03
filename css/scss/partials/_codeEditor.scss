@@ -1,0 +1,29 @@
+/* # CodeEditor
+---------------------------------------------------------------------------------------------------- */
+
+.cm-s-devcms {
+  background-color: $light;
+  color: $dark;
+
+  .CodeMirror-gutters {
+    background: $light;
+    color: transparentize($dark, .3); //rgba(209,219,224,.7);
+    border-right: 1px solid $medium;
+  }
+
+  .CodeMirror-linenumber {
+    color: $fog;
+  }
+
+  .CodeMirror-activeline-background {
+    background: $medium;
+  }
+
+  .cm-tag {
+    color: $accent-color;
+  }
+
+  .CodeMirror-cursor {
+    border-left-color: $dark;
+  }
+}

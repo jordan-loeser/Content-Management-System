@@ -7,17 +7,18 @@
   <div class="page-info">
     <h2>Homepage Template</h2>
     <div class="url" contenteditable="true">http://example.com/team/john-doe</div>
+    <a href="#" class="button">Save</a>
   </div>
 </header><!--/DASHBOARD HEADER -->
 <div class="sidebar">
   <ul>
-    <li><span>Pages</span></li>
     <li class="has-children"><span>CSS</span>
       <ul class="sub-menu">
         <li><span>Homepage</span></li>
         <li><span>Blog</span></li>
       </ul>
     </li>
+    <li><span>Pages</span></li>
     <li class="has-children"><span>Templates</span>
       <ul class="sub-menu">
         <li><span>Homepage</span></li>

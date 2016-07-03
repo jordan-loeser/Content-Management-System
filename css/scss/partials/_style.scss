@@ -1,4 +1,4 @@
-/* # Style
+/* # Header
 ---------------------------------------------------------------------------------------------------- */
 
 header {
@@ -8,12 +8,12 @@ header {
     height: 150px;
     width: 250px;
     padding: 2em;
-    background-color: $gray;
-    border-bottom: 1px solid $gray-dark;
+    background-color: $medium;
+    border-bottom: 1px solid $fog;
     h1 {
       margin: 0;
       font-family: $header-font;
-      color: $accent-color;
+      color: $header-color;
       font-size: 20px;
       font-size: 2em;
       font-weight: 100;
@@ -24,6 +24,8 @@ header {
     height: 150px;
     width: calc(100% - 250px);
     padding: 2em;
+    background-color: $light;
+    border-bottom: 1px solid $medium;
     h2 {
       margin: 0;
       margin-top: 1em;
@@ -36,26 +38,32 @@ header {
       margin-top: .8em;
       padding: .5em 10px;
       font-family: $mono-font;
-      color: transparentize($light-color, .5); //#4a5961;
+      color: $fog; //#4a5961;
       font-size: .8em;
       font-weight: 100;
-      background: $gray;
+      background: $medium;
       @include border-radius(3px);
       &:focus {
-        background: $light-color;
-        color: $gray;
+        background: $fog;
+        color: $light;
         outline: none;
       }
     }
+    .button {
+      float: right;
+    }
   }
 }
+
+/* # Sidebar
+---------------------------------------------------------------------------------------------------- */
 
 .sidebar {
   float: left;
   height: calc(100% - 150px);
   height: calc(100vh - 150px);
   width: 250px;
-  background-color: $gray;
+  background-color: $medium;
   overflow-y: scroll;
   ul {
     font-family: $header-font;
@@ -65,19 +73,19 @@ header {
         position: relative;
         padding: 1em 2em;
         padding-left: 3.5em;
-        color: $light-color;
+        color: $dark;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 1em;
         font-weight: 100;
-        border-bottom: 1px solid $gray-dark;
+        border-bottom: 1px solid $fog;
         &:hover {
-          background-color: $gray-light;
+          background-color: $light;
         }
       }
       &.open {
         & > span {
-          background-color: $gray-dark;
+          background-color: $fog;
           &:before {
             content: "\f0d7" !important;
           }
@@ -101,7 +109,7 @@ header {
         display: none;
         padding: 0;
         list-style-type: none;
-        border-bottom: 1px solid $gray-dark;
+        border-bottom: 1px solid $fog;
         li span {
           padding: 1em 3.5em;
           text-transform: none;
@@ -115,6 +123,8 @@ header {
   }
 }
 
+/* # Main Panel
+---------------------------------------------------------------------------------------------------- */
 
 .main-panel.with-sidebar {
   float: right;

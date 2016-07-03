@@ -3,21 +3,22 @@
 //---------------------------------------------------------------------------------------------------- */
 
 // THEME COLORS
-$gray: #232E34;
-$gray-light: #2D3B43;
-$gray-dark: #1E272C;
-$light-color: #D1DBE0;
-$accent-color: #00BCD4;
-$background-color: $gray-dark;
+$accent-color: #00BCD4; //#4CAF50;
+$medium: #F3F5F6; //#1C1C1F; //#232E34;
+$light: #FFF; //#2D3B43;
+$dark: #7F94A1; //#121314; //#1E272C;
+$fog: transparentize($dark, .5);
+$neutral: #DFE0E6; //#D1DBE0;
+$background-color: $dark;
 
 // THEME FONTS
 $main-font: "Open Sans",sans-serif;
 $header-font: "Roboto",sans-serif;
 $mono-font: "Roboto Mono",sans-serif;
-$main-font-color: $light-color;
+$main-font-color: $dark;
 
 // HEADERS
-$header-color: $light-color;
+$header-color: $accent-color;
 
 //----------------------------------------------------------//
 //    BREAKPOINTS                                           //
