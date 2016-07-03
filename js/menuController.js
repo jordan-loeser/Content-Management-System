@@ -3,7 +3,7 @@ $(document).ready(function(){
         $(this).toggleClass("open");
         $(this).find(".sub-menu").slideToggle();
     });
-    $("#section-nav").find("li").hover(function(){
-        $(this).find(".label").slideToggle();
+    $("#section-nav").find("li").hoverIntent(function(){
+        $(this).find(".label").slideToggle(300);
     });
 });
