@@ -3,6 +3,7 @@
 
 a {
   color: $accent-color;
+  text-decoration: none;
   &:hover {
     color: darken($accent-color, 10%);
   }

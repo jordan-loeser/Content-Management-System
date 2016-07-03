@@ -32,13 +32,19 @@
 <div class="right">
   <!-- DASHBOARD HEADER -->
   <header>
+    <nav>
+      <ul>
+        <li class="link"><a href="#">Log Out</a></li>
+        <li><a href="#"><div class="avatar"></div></a></li>
+      </ul>
+    </nav>
     <div class="logo">
       <h1>Developer Panel</h1>
     </div>
     <div class="page-info">
       <h2>Homepage Template</h2>
       <div class="url">http://example.com/<span contenteditable="true">team/john-doe</span></div>
-      <a href="#" class="button">Save</a>
+      <!--<a href="#" class="button">Save</a>-->
     </div>
   </header><!--/DASHBOARD HEADER -->
   <div class="main-panel with-sidebar">

@@ -26,7 +26,8 @@ html, body {
 /* # Helper Classes
 ---------------------------------------------------------------------------------------------------- */
 a {
-  color: #00BCD4; }
+  color: #00BCD4;
+  text-decoration: none; }
   a:hover {
     color: #008fa1; }
   a.button {
@@ -145,10 +146,45 @@ a {
   float: right;
   width: calc(100% - 100px);
   box-shadow: 0px 0px 20px rgba(127, 148, 161, 0.5);
+  /* # Navbar
+  ---------------------------------------------------------------------------------------------------- */
   /* # Header
   ---------------------------------------------------------------------------------------------------- */
   /* # Main Panel
   ---------------------------------------------------------------------------------------------------- */ }
+  .right nav {
+    float: right;
+    padding: .5em 2em;
+    font-family: "Roboto", sans-serif;
+    background: #F3F5F6;
+    border-radius: 0px 0px 0px 20px;
+    -webkit-border-radius: 0px 0px 0px 20px;
+    background-clip: padding-box; }
+    .right nav ul {
+      list-style-type: none; }
+      .right nav ul li {
+        float: left;
+        font-size: .8em;
+        font-weight: 300; }
+        .right nav ul li.link {
+          margin-right: 1em;
+          line-height: 30px; }
+        .right nav ul li a {
+          color: rgba(127, 148, 161, 0.5); }
+          .right nav ul li a:hover {
+            color: #7F94A1; }
+    .right nav .avatar {
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      background-clip: padding-box;
+      border: 2px solid rgba(127, 148, 161, 0.5);
+      background-image: url("../images/avatar.jpg");
+      background-size: cover;
+      background-position: center; }
+      .right nav .avatar:hover {
+        border-color: #7F94A1; }
   .right header {
     overflow: auto; }
     .right header .logo {
