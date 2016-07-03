@@ -181,22 +181,21 @@ a {
         margin: 0;
         margin-top: .8em;
         padding: .5em 10px;
+        background: #F3F5F6;
+        color: #7F94A1;
         font-family: "Roboto Mono", sans-serif;
-        color: rgba(127, 148, 161, 0.5);
         font-size: .8em;
         font-weight: 100;
-        background: #F3F5F6;
         border-radius: 3px;
         -webkit-border-radius: 3px;
-        background-clip: padding-box; }
-        .right header .page-info .url:hover {
-          background: #e4e9eb;
-          cursor: default; }
-        .right header .page-info .url:focus {
-          background: rgba(127, 148, 161, 0.5);
-          color: #FFF;
-          outline: none;
-          cursor: text; }
+        background-clip: padding-box;
+        cursor: default; }
+        .right header .page-info .url span {
+          color: rgba(127, 148, 161, 0.5); }
+          .right header .page-info .url span:hover {
+            cursor: text; }
+          .right header .page-info .url span:focus {
+            outline: none; }
       .right header .page-info .button {
         float: right; }
   .right .main-panel.with-sidebar .CodeMirror {

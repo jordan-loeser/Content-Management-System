@@ -37,7 +37,7 @@
     </div>
     <div class="page-info">
       <h2>Homepage Template</h2>
-      <div class="url" contenteditable="true">http://example.com/team/john-doe</div>
+      <div class="url">http://example.com/<span contenteditable="true">team/john-doe</span></div>
       <a href="#" class="button">Save</a>
     </div>
   </header><!--/DASHBOARD HEADER -->
