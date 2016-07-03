@@ -145,21 +145,24 @@
         margin: 0;
         margin-top: .8em;
         padding: .5em 10px;
+        background: $medium;
+        color: $dark;
         font-family: $mono-font;
-        color: $fog; //#4a5961;
         font-size: .8em;
         font-weight: 100;
-        background: $medium;
         @include border-radius(3px);
-        &:hover {
-          background: darken($medium, 5%);
-          cursor: default;
-        }
-        &:focus {
-          background: $fog;
-          color: $light;
-          outline: none;
-          cursor: text;
+        cursor: default;
+        span {
+          color: $fog;
+          &:hover {
+            //background: darken($medium, 5%);
+            cursor: text;
+          }
+          &:focus {
+            //background: $fog;
+            //color: $light;
+            outline: none;
+          }
         }
       }
       .button {
