@@ -2,17 +2,24 @@
 <!-- START BODY -->
 <div id="section-nav">
   <ul>
-    <a href="#"><li><i class="fa fa-file-text"></i>
-      <div class="label">Files</div></li></a>
-    <a href="#"><li><i class="fa fa-bar-chart"></i>
-      <div class="label">Stats</div></li></a>
-    <a href="#"><li><i class="fa fa-plug"></i>
-      <div class="label">Plugins</div></li></a>
-    <a href="#"><li><i class="fa fa-cog"></i>
-      <div class="label">Settings</div></li></a>
+    <li><a href="#"><i class="fa fa-file-text"></i>
+      <div class="label">Files</div></a></li>
+    <li>
+      <a href="#" class="has-children">
+        <i class="fa fa-bar-chart"></i>
+        <div class="label">Stats</div>
+      </a>
+      <ul class="sub-menu">
+        <li>Hello</li>
+      </ul>
+    </li>
+    <li><a href="#"><i class="fa fa-plug"></i>
+      <div class="label">Plugins</div></a></li>
+    <li><a href="#"><i class="fa fa-cog"></i>
+      <div class="label">Settings</div></a></li>
   </ul>
 </div><!--/SECTION NAV -->
-<div class="sidebar">
+<!--<div class="sidebar">
   <ul>
     <li class="has-children"><span>CSS</span>
       <ul class="sub-menu">
@@ -28,8 +35,8 @@
       </ul>
     </li>
   </ul>
-</div><!--/SIDEBAR -->
-<div class="main-panel menu-open">
+</div>--><!--/SIDEBAR -->
+<div class="main-panel menu-open sub-menu-open">
   <!-- DASHBOARD HEADER -->
   <header>
     <nav>

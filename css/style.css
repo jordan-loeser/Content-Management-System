@@ -69,17 +69,16 @@ a {
   text-align: center; }
   #section-nav ul {
     padding-top: 3em; }
-    #section-nav ul a {
-      display: block;
-      font-size: 24px;
-      font-size: 1.5em;
-      color: #7F94A1;
-      text-decoration: none; }
-      #section-nav ul a li {
-        padding: 1em;
-        padding-top: 0;
-        padding-bottom: 2em; }
-        #section-nav ul a li div.label {
+    #section-nav ul li {
+      padding-top: 0;
+      padding-bottom: 3em; }
+      #section-nav ul li a {
+        display: block;
+        font-size: 24px;
+        font-size: 1.5em;
+        color: #7F94A1;
+        text-decoration: none; }
+        #section-nav ul li a div.label {
           display: none;
           padding-top: 1em;
           font-size: 12px;
@@ -87,66 +86,85 @@ a {
           font-family: "Roboto", sans-serif;
           font-weight: 300;
           color: #00BCD4; }
-      #section-nav ul a:hover {
+      #section-nav ul li:hover {
         color: #647b89; }
+  #section-nav .sub-menu {
+    display: none; }
 
 /* # Sidebar
 ---------------------------------------------------------------------------------------------------- */
-.sidebar {
+/*.sidebar {
   display: none;
   float: left;
   height: calc(100% - 150px);
   height: calc(100vh - 150px);
   width: 100px;
-  background-color: #F3F5F6;
-  overflow-y: scroll; }
-  .sidebar ul {
-    font-family: "Roboto", sans-serif; }
-    .sidebar ul li span {
-      display: none;
-      position: relative;
-      padding: 1em 2em;
-      padding-left: 3.5em;
-      color: #7F94A1;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 1em;
-      font-weight: 100;
-      border-bottom: 1px solid rgba(127, 148, 161, 0.5); }
-      .sidebar ul li span:hover {
-        background-color: #FFF; }
-    .sidebar ul li.open > span {
-      background-color: rgba(127, 148, 161, 0.5); }
-      .sidebar ul li.open > span:before {
-        content: "\f0d7" !important; }
-    .sidebar ul li.has-children span:before {
-      content: "\f0da";
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-      font-size: 1em;
-      padding-right: 0.5em;
-      position: absolute;
-      top: 17px;
-      left: 2em; }
-    .sidebar ul li .sub-menu {
-      display: none;
-      padding: 0;
-      list-style-type: none;
-      border-bottom: 1px solid rgba(127, 148, 161, 0.5); }
-      .sidebar ul li .sub-menu li span {
-        padding: 1em 3.5em;
-        text-transform: none;
-        border: none; }
-        .sidebar ul li .sub-menu li span:before {
-          content: ""; }
-
+  background-color: $medium;
+  overflow-y: scroll;
+  ul {
+    font-family: $header-font;
+    li {
+      span {
+        display: none;
+        position: relative;
+        padding: 1em 2em;
+        padding-left: 3.5em;
+        color: $dark;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1em;
+        font-weight: 100;
+        border-bottom: 1px solid $fog;
+        &:hover {
+          background-color: $light;
+        }
+      }
+      &.open {
+        & > span {
+          background-color: $fog;
+          &:before {
+            content: "\f0d7" !important;
+          }
+        }
+      }
+      &.has-children span {
+        &:before {
+          content: "\f0da";
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+          font-size: 1em;
+          padding-right: 0.5em;
+          position: absolute;
+          top: 17px;
+          left: 2em;
+        }
+      }
+      .sub-menu {
+        display: none;
+        padding: 0;
+        list-style-type: none;
+        border-bottom: 1px solid $fog;
+        li span {
+          padding: 1em 3.5em;
+          text-transform: none;
+          border: none;
+          &:before {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}*/
 /* # Main Panel
 ---------------------------------------------------------------------------------------------------- */
 .main-panel {
   float: right;
-  box-shadow: 0px 0px 20px rgba(127, 148, 161, 0.5); }
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(127, 148, 161, 0.5);
+  transition: all .5s ease; }
   .main-panel.menu-open {
     width: calc(100% - 100px); }
   .main-panel .CodeMirror {
