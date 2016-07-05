@@ -29,11 +29,12 @@
     </li>
   </ul>
 </div><!--/SIDEBAR -->
-<div class="right">
+<div class="main-panel menu-open">
   <!-- DASHBOARD HEADER -->
   <header>
     <nav>
       <ul>
+        <li class="link"><a href="#"><i class="fa fa-navicon"></i></a></li>
         <li class="link"><a href="#">Log Out</a></li>
         <li><a href="#"><div class="avatar"></div></a></li>
       </ul>
@@ -47,11 +48,9 @@
       <!--<a href="#" class="button">Save</a>-->
     </div>
   </header><!--/DASHBOARD HEADER -->
-  <div class="main-panel with-sidebar">
-    <form>
-      <textarea id="codeEditor"><div>Hey</div></textarea>
-    </form>
-  </div><!--/MAIN PANEL -->
-</div><!--/RIGHT -->
+  <form>
+    <textarea id="codeEditor"><div>Hey</div></textarea>
+  </form>
+</div><!--/MAIN PANEL -->
 <!--/END BODY -->
 <?php include 'includes/footer.php'; ?>

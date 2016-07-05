@@ -142,17 +142,17 @@ a {
         .sidebar ul li .sub-menu li span:before {
           content: ""; }
 
-.right {
+/* # Main Panel
+---------------------------------------------------------------------------------------------------- */
+.main-panel {
   float: right;
-  width: calc(100% - 100px);
-  box-shadow: 0px 0px 20px rgba(127, 148, 161, 0.5);
-  /* # Navbar
-  ---------------------------------------------------------------------------------------------------- */
-  /* # Header
-  ---------------------------------------------------------------------------------------------------- */
-  /* # Main Panel
-  ---------------------------------------------------------------------------------------------------- */ }
-  .right nav {
+  box-shadow: 0px 0px 20px rgba(127, 148, 161, 0.5); }
+  .main-panel.menu-open {
+    width: calc(100% - 100px); }
+  .main-panel .CodeMirror {
+    height: calc(100% - 150px);
+    height: calc(100vh - 150px); }
+  .main-panel nav {
     float: right;
     padding: .5em 2em;
     font-family: "Roboto", sans-serif;
@@ -160,20 +160,20 @@ a {
     border-radius: 0px 0px 0px 20px;
     -webkit-border-radius: 0px 0px 0px 20px;
     background-clip: padding-box; }
-    .right nav ul {
+    .main-panel nav ul {
       list-style-type: none; }
-      .right nav ul li {
+      .main-panel nav ul li {
         float: left;
         font-size: .8em;
         font-weight: 300; }
-        .right nav ul li.link {
+        .main-panel nav ul li.link {
           margin-right: 1em;
           line-height: 30px; }
-        .right nav ul li a {
+        .main-panel nav ul li a {
           color: rgba(127, 148, 161, 0.5); }
-          .right nav ul li a:hover {
+          .main-panel nav ul li a:hover {
             color: #7F94A1; }
-    .right nav .avatar {
+    .main-panel nav .avatar {
       height: 30px;
       width: 30px;
       border-radius: 15px;
@@ -183,11 +183,11 @@ a {
       background-image: url("../images/avatar.jpg");
       background-size: cover;
       background-position: center; }
-      .right nav .avatar:hover {
+      .main-panel nav .avatar:hover {
         border-color: #7F94A1; }
-  .right header {
+  .main-panel header {
     overflow: auto; }
-    .right header .logo {
+    .main-panel header .logo {
       display: none;
       float: left;
       height: 150px;
@@ -195,24 +195,24 @@ a {
       padding: 2em;
       background-color: #F3F5F6;
       border-bottom: 1px solid rgba(127, 148, 161, 0.5); }
-      .right header .logo h1 {
+      .main-panel header .logo h1 {
         margin: 0;
         font-family: "Roboto", sans-serif;
         color: #00BCD4;
         font-size: 20px;
         font-size: 2em;
         font-weight: 100; }
-    .right header .page-info {
+    .main-panel header .page-info {
       height: 150px;
       padding: 2em;
       background-color: #FFF;
       border-bottom: 1px solid #F3F5F6; }
-      .right header .page-info h2 {
+      .main-panel header .page-info h2 {
         margin: 0;
         margin-top: 1em;
         font-family: "Roboto", sans-serif;
         font-weight: 100; }
-      .right header .page-info .url {
+      .main-panel header .page-info .url {
         float: left;
         margin: 0;
         margin-top: .8em;
@@ -226,16 +226,13 @@ a {
         -webkit-border-radius: 3px;
         background-clip: padding-box;
         cursor: default; }
-        .right header .page-info .url span {
+        .main-panel header .page-info .url span {
           color: rgba(127, 148, 161, 0.5); }
-          .right header .page-info .url span:hover {
+          .main-panel header .page-info .url span:hover {
             cursor: text; }
-          .right header .page-info .url span:focus {
+          .main-panel header .page-info .url span:focus {
             outline: none; }
-      .right header .page-info .button {
+      .main-panel header .page-info .button {
         float: right; }
-  .right .main-panel.with-sidebar .CodeMirror {
-    height: calc(100% - 150px);
-    height: calc(100vh - 150px); }
 
 /*# sourceMappingURL=style.css.map */
