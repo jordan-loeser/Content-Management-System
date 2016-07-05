@@ -17,8 +17,17 @@
     </li>
     <li><a href="#"><i class="fa fa-plug"></i>
       <div class="label">Plugins</div></a></li>
-    <li><a href="#"><i class="fa fa-cog"></i>
-      <div class="label">Settings</div></a></li>
+    <li class="has-children">
+      <a href="#">
+        <i class="fa fa-cog"></i>
+        <div class="label">Settings</div>
+      </a>
+      <ul class="sub-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Branding</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
   </ul>
 </div><!--/SECTION NAV -->
 <div class="main-panel menu-open">
