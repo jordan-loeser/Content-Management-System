@@ -63,22 +63,22 @@ a {
 
 /* # Section Nav
 ---------------------------------------------------------------------------------------------------- */
-#section-nav {
+#menu {
   width: 100px;
   float: left;
   text-align: center; }
-  #section-nav ul {
+  #menu ul {
     padding-top: 3em; }
-    #section-nav ul li {
+    #menu ul li {
       padding-top: 0;
       padding-bottom: 3em; }
-      #section-nav ul li a {
+      #menu ul li a {
         display: block;
         font-size: 24px;
         font-size: 1.5em;
         color: #7F94A1;
         text-decoration: none; }
-        #section-nav ul li a div.label {
+        #menu ul li a div.label {
           display: none;
           padding-top: 1em;
           font-size: 12px;
@@ -86,78 +86,31 @@ a {
           font-family: "Roboto", sans-serif;
           font-weight: 300;
           color: #00BCD4; }
-      #section-nav ul li:hover {
+      #menu ul li:hover {
         color: #647b89; }
-  #section-nav .sub-menu {
-    display: none; }
+  #menu .sub-menu {
+    display: none;
+    position: fixed;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    z-index: 100;
+    background-color: #00BCD4;
+    box-shadow: inset 0px 0px 20px rgba(127, 148, 161, 0.5);
+    text-align: left;
+    list-style-type: none; }
+    #menu .sub-menu li {
+      padding: 0; }
+      #menu .sub-menu li a {
+        padding: .5em 1em;
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        color: #F3F5F6; }
 
 /* # Sidebar
 ---------------------------------------------------------------------------------------------------- */
-/*.sidebar {
-  display: none;
-  float: left;
-  height: calc(100% - 150px);
-  height: calc(100vh - 150px);
-  width: 100px;
-  background-color: $medium;
-  overflow-y: scroll;
-  ul {
-    font-family: $header-font;
-    li {
-      span {
-        display: none;
-        position: relative;
-        padding: 1em 2em;
-        padding-left: 3.5em;
-        color: $dark;
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 1em;
-        font-weight: 100;
-        border-bottom: 1px solid $fog;
-        &:hover {
-          background-color: $light;
-        }
-      }
-      &.open {
-        & > span {
-          background-color: $fog;
-          &:before {
-            content: "\f0d7" !important;
-          }
-        }
-      }
-      &.has-children span {
-        &:before {
-          content: "\f0da";
-          font-family: FontAwesome;
-          font-style: normal;
-          font-weight: normal;
-          text-decoration: inherit;
-          font-size: 1em;
-          padding-right: 0.5em;
-          position: absolute;
-          top: 17px;
-          left: 2em;
-        }
-      }
-      .sub-menu {
-        display: none;
-        padding: 0;
-        list-style-type: none;
-        border-bottom: 1px solid $fog;
-        li span {
-          padding: 1em 3.5em;
-          text-transform: none;
-          border: none;
-          &:before {
-            content: "";
-          }
-        }
-      }
-    }
-  }
-}*/
 /* # Main Panel
 ---------------------------------------------------------------------------------------------------- */
 .main-panel {
@@ -167,6 +120,8 @@ a {
   transition: all .5s ease; }
   .main-panel.menu-open {
     width: calc(100% - 100px); }
+    .main-panel.menu-open.sub-menu-open {
+      width: calc(100% - 300px); }
   .main-panel .CodeMirror {
     height: calc(100% - 150px);
     height: calc(100vh - 150px); }

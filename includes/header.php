@@ -16,6 +16,7 @@
 
     <!-- CUSTOM STYLESHEETS -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- CODEMIRROR -->
     <link rel="stylesheet" href="css/codemirror/codemirror.css">
     <link rel="stylesheet" href="css/codemirror/themes/devcms.css">
